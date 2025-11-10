@@ -1,0 +1,52 @@
+# Archivo .gitignore para proyectos de Python y VS Code
+
+# ==================================
+# 1. Archivos Ignorados de Python
+# ==================================
+
+# Archivos de caché
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Directorios de entornos virtuales
+# Ignora el nombre más común (venv) y el nombre estándar de Python 3 (env)
+venv/
+env/
+.venv/
+.tox/
+.coverage
+
+# Archivos de distribución y compilación
+*.egg-info/
+dist/
+build/
+.Python
+.ipynb_checkpoints # Usado en entornos Jupyter/IPython
+
+# ==================================
+# 2. Archivos Ignorados de VS Code
+# ==================================
+
+# Configuración de workspace personal
+# Guarda la configuración del editor, historial, etc.
+.vscode/
+
+# Ignorar solo el directorio de configuración del workspace
+# Si quieres compartir la configuración entre desarrolladores, puedes comentar la línea anterior
+# Pero siempre es buena práctica ignorar la carpeta principal .vscode/
+
+# ==================================
+# 3. Archivos de Sistema y Varios
+# ==================================
+
+# Archivos del sistema operativo
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Archivos de logs y datos generados localmente
+*.log
+*.sqlite3
+/datos/sri_ventas_2024.csv # <--- **IMPORTANTE:** Si tu archivo de datos es grande
+# y lo quieres fuera del repositorio, ignóralo. Si es pequeño y esencial, coméntalo.
