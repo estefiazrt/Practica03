@@ -1,0 +1,70 @@
+🌸📊 Práctica 03 – Pruebas automatizadas sobre ventas SRI 🌸
+
+Este proyecto forma parte de la materia **Gestión de Calidad de Software**.  
+Es una pequeña aplicación en **Python** que analiza un archivo CSV de ventas del SRI por provincia, muestra resultados en consola y valida su correcto funcionamiento mediante **pruebas unitarias** y **análisis de cobertura**.
+
+---
+
+✨ Funcionalidades principales ✨
+
+🧮 **Lectura y procesamiento de datos**  
+- Carga el archivo `sri_ventas_2024.csv` desde la carpeta `datos/`.  
+- Lee el archivo CSV y construye una estructura de datos para trabajar con las ventas por provincia.
+
+📊 **Análisis de ventas por provincia**  
+- Calcula el **total de ventas por provincia** a partir de los datos del SRI.  
+- Devuelve un diccionario donde cada provincia está asociada a su valor total de ventas.
+
+⌨️ **Interacción por consola**  
+- Muestra en pantalla el total de ventas de todas las provincias.  
+- Permite ingresar el nombre de una provincia y muestra su total específico de ventas.
+
+✅ **Pruebas automatizadas**  
+- Uso del módulo `unittest` para:  
+  - Verificar que la cantidad de provincias cargadas sea coherente.  
+  - Comprobar que los valores de ventas sean numéricos y no negativos.  
+  - Validar que las consultas por provincia devuelvan resultados consistentes con los datos cargados.
+
+📈 **Cobertura de código**  
+- Uso de la herramienta **coverage** para medir el porcentaje de código cubierto por las pruebas.  
+- Generación de reportes:
+  - En consola, con el resumen de cobertura por archivo.  
+  - En formato HTML, dentro de la carpeta `htmlcov/`, donde se visualizan las líneas de código cubiertas y no cubiertas.
+
+---
+
+🛠️ Tecnologías utilizadas 🛠️
+
+- 🐍 **Python 3**  
+- 🧪 **unittest** (pruebas unitarias)  
+- 📈 **coverage** (análisis de cobertura de código)  
+
+---
+
+📁 Estructura del proyecto 📁
+
+```text
+📦 Practica03/
+├── 📄 app.py                  # Punto de entrada de la aplicación
+├── 📂 datos/
+│   └── 📄 sri_ventas_2024.csv # Archivo de datos del SRI
+├── 📂 src/
+│   └── 📄 procesador.py       # Clase Analizador: lógica de negocio
+├── 📂 tests/
+│   └── 📄 test_procesador.py  # Pruebas unitarias del analizador
+├── 📂 htmlcov/                # Reportes HTML generados por coverage
+└── 📂 venv/                   # Entorno virtual de Python (opcional)
+
+🌷 Aprendizajes de la práctica 🌷
+
+Importancia de organizar un proyecto en carpetas (src, tests, datos) para mantener el código más claro y mantenible.
+
+Uso de pruebas automatizadas para verificar el comportamiento de las funciones y detectar errores de forma temprana.
+
+Aplicación de coverage para analizar qué partes del código están cubiertas por las pruebas y cuáles no, ayudando a mejorar la calidad del software.
+
+Trabajo con datos reales de ventas del SRI para practicar validación y análisis en un contexto más cercano a casos de uso reales.
+
+🤝 Colaboradores 🤝
+
+🌷 @Melanie Murillo
